@@ -4,23 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boletin</title>
+    <title>Iniciar sesión - Boletin APJ 2023</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-weight: 500;
+            margin-bottom: 25px;
+            color: #343a40;
+        }
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: border 0.3s;
+        }
+        .form-control:focus {
+            border-color: #b627b6;
+            box-shadow: none;
+        }
+        .btn {
+            border-radius: 5px;
+            font-weight: 500;
+            background-color: #b627b6;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover, .btn:focus {
+            background-color: #9f229f;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
-            <form id="loginForm">
-                <h2 class="text-center">Boletin APJ 2023</h2>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="username" placeholder="Usuario" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
-            </form>
+            <div class="col-md-6 col-lg-4 form-container">
+                <form id="loginForm">
+                    <h2 class="text-center">Boletin APJ 2023</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="username" placeholder="Usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                </form>
+            </div>
         </div>
     </div>
 

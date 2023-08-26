@@ -6,23 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletin APJ 2023</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #A666B0;
+        }
+        .navbar-brand {
+            font-weight: 500;
+        }
+        #carouselExampleAutoplaying img {
+            max-height: 500px;
+            width: auto;
+        }
+        #powerbiReport iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        #powerbiReport {
+            margin: 40px 0;
+        }
+        h2 {
+            color: #343a40;
+            margin-top: 40px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #edcbf0;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-link {
+            font-weight: 500;
+        }
+        .nav-link:hover, .nav-link:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+        .custom-container {
+         max-width: 1400px; /* O cualquier otro valor que desees */
+         margin: 0 auto;  /* Para centrarlo */
+        }
+    </style>
 </head>
 
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Atención PsicoJurídica en Territorio - APJ 2023</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#carouselExampleAutoplaying">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#powerbiReport">Informe</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container mt-5">
-        <h2>Boletin APJ 2023</h2>
-        <p>Ultima fecha de actualización 28 de julio de 2023.</p>
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10"> <!-- Añadido para controlar el ancho -->
-                <div id="powerbiReport">
-                    <iframe title="Report Section" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmUxNzdhNzUtYWEzMi00OWVjLTg1NGUtM2QyZWM1MmNmNmExIiwidCI6Ijk5ZTFlNzIxLTcxODQtNDk4ZS04YWZmLWIyYWQ0ZTUzYzFjMiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+
+        <!-- Carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel" data-interval="5000" >
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/image1.png" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/image2.jpeg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/image3.jpeg" class="d-block w-100" alt="Imagen 3">
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleAutoplaying" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleAutoplaying" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
+        <h2>¿Qué es APJ?</h2>
+        <p>El mecanismo de APJT es un servicio público esencial dirigido a las mujeres víctimas sobrevivientes de VBG, creado en el marco del programa de Seguridad Pública para las Mujeres de la Alcaldía de Medellín en el año 2011 e incorporado a la política pública mediante el Acuerdo 052 de 2011 del Concejo de la ciudad, por medio del cual se crea en el municipio de Medellín el Programa Integral de Protección a Mujeres Víctimas de Violencias, para garantizar a las habitantes del municipio derechos fundamentales como la vida, seguridad, integridad, salud, acceso a la justicia y el derecho a una vida libre de violencias, entre otros..</p>
+
+        <h2>Boletin APJ 2023</h2>
+        <p>Última fecha de actualización: 28 de julio de 2023.</p>
+
+        <!-- Power BI Report -->
+        <div id="powerbiReport">
+            <iframe title="BOLETIN_APJ" width="600" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMWFiMzljNTEtODVjMi00YTQzLWE2Y2EtMzY0NWZiNGZmZjIzIiwidCI6Ijk5ZTFlNzIxLTcxODQtNDk4ZS04YWZmLWIyYWQ0ZTUzYzFjMiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2023 Mecanismo de Atención Psicojuridica en Territorio APJ</p>
+        </footer>
     </div>
-    ``
-    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
